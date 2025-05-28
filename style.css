@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  background-color: #0f0f0f;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+}
+
+nav {
+  padding: 20px 40px;
+  text-align: right;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px 0;
+  position: relative;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.icons img {
+  width: 24px;
+  margin: 0 10px;
+  filter: invert(1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #aaa;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
