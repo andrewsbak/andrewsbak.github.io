@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  color: white;
   background-color: #000;
+  color: white;
   font-family: 'Segoe UI', sans-serif;
   overflow-x: hidden;
 }
@@ -28,6 +28,11 @@ nav ul {
   padding: 0;
 }
 
+nav ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
 nav ul li a {
   color: white;
   text-decoration: none;
@@ -48,7 +53,7 @@ nav ul li a:hover {
 .hero-content {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
 }
 
 .text {
@@ -88,4 +93,6 @@ p {
   color: #aaa;
 }
 
-
+.page-section {
+  padding: 100px 60px;
+}
