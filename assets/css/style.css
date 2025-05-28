@@ -7,9 +7,8 @@ body {
 }
 
 #vanta-bg {
-  width: 100vw;
-  height: 100vh;
-  overflow: auto;
+  width: 100%;
+  min-height: 100vh;
   position: relative;
 }
 
