@@ -5,28 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Name</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="#">Expertise</a></li>
-      <li><a href="#">History</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
 
-  <header class="hero">
-    <img src="assets/img/profile.png" alt="Profile Picture" class="profile-pic" />
-    <div class="text">
-      <div class="icons">
-        <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/github.svg" alt="GitHub" /></a>
-        <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/linkedin.svg" alt="LinkedIn" /></a>
+  <div id="vanta-bg">
+
+    <nav>
+      <ul>
+        <li><a href="#">Expertise</a></li>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header class="hero">
+      <img src="assets/img/profile.png" alt="Profile Picture" class="profile-pic" />
+      <div class="text">
+        <div class="icons">
+          <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/github.svg" alt="GitHub" /></a>
+          <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/linkedin.svg" alt="LinkedIn" /></a>
+        </div>
+        <h1>Your Name</h1>
+        <p>Full Stack Engineer</p>
       </div>
-      <h1>Your Name</h1>
-      <p>Full Stack Engineer</p>
-    </div>
-    <img src="assets/svg/wave.svg" class="wave" alt="Decorative Wave" />
-  </header>
+      <img src="assets/svg/wave.svg" class="wave" alt="Decorative Wave" />
+    </header>
+
+  </div>
+
+  <script>
+    VANTA.RINGS({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      backgroundColor: 0x0,
+      color: 0x430e39
+    })
+  </script>
+
 </body>
 </html>
