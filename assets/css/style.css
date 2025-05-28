@@ -28,15 +28,15 @@ nav ul {
   padding: 0;
 }
 
-nav ul li {
-  display: inline-block;
-  margin-left: 30px;
-}
-
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #888;
 }
 
 .hero {
@@ -69,12 +69,6 @@ nav ul li a {
   width: 24px;
   margin: 0 10px;
   filter: invert(1);
-}
-
-.icons img {
-  width: 24px;
-  margin: 0 10px;
-  filter: invert(1);
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -94,14 +88,4 @@ p {
   color: #aaa;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #888;
-}
 
