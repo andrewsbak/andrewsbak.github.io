@@ -47,7 +47,7 @@ nav ul li a {
 .hero-content {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 30px;
 }
 
 .text {
