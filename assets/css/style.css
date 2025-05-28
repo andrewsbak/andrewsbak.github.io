@@ -40,10 +40,14 @@ nav ul li a {
 }
 
 .hero {
-  text-align: center;
-  padding: 60px 20px 0;
+  display: flex;
+  justify-content: flex-start; /* align left */
+  align-items: center;         /* center vertically */
+  padding: 60px 80px 0;        /* adjust horizontal padding */
   position: relative;
   z-index: 1;
+  text-align: left;
+  height: auto; /* keep current height */
 }
 
 .profile-pic {
