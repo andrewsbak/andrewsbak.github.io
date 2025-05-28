@@ -1,14 +1,23 @@
 body {
   margin: 0;
-  background-color: #0f0f0f;
+  /* background-color: #0f0f0f; */ /* Removed so Vanta shows */
   color: white;
   font-family: 'Segoe UI', sans-serif;
   overflow-x: hidden;
 }
 
+#vanta-bg {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  position: relative;
+}
+
 nav {
   padding: 20px 40px;
   text-align: right;
+  position: relative;
+  z-index: 1;
 }
 
 nav ul {
@@ -32,6 +41,7 @@ nav ul li a {
   text-align: center;
   padding: 60px 20px 0;
   position: relative;
+  z-index: 1;
 }
 
 .profile-pic {
@@ -63,5 +73,5 @@ p {
   bottom: 0;
   left: 0;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
 }
