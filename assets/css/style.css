@@ -61,6 +61,7 @@ nav ul li a {
   width: 130px;
   height: 130px;
   object-fit: cover;
+  margin: 0;
 }
 
 .icons img {
