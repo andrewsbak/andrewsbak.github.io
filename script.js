@@ -1,19 +1,21 @@
-const heroText = document.querySelector('.hero h1');
+window.addEventListener("DOMContentLoaded", () => {
+  const heroText = document.getElementById('hero-title');
 
-document.addEventListener('mousemove', (e) => {
-  const { clientX, clientY } = e;
-  const centerX = window.innerWidth / 2;
-  const centerY = window.innerHeight / 2;
+  document.addEventListener('mousemove', (e) => {
+    const { clientX, clientY } = e;
+    const centerX = window.innerWidth / 2;
+    const centerY = window.innerHeight / 2;
 
-  const offsetX = (clientX - centerX) / centerX;
-  const offsetY = (clientY - centerY) / centerY;
+    const offsetX = (clientX - centerX) / centerX;
+    const offsetY = (clientY - centerY) / centerY;
 
-  const moveX = offsetX * 10; // control intensity
-  const moveY = offsetY * 10;
+    const moveX = offsetX * 10;
+    const moveY = offsetY * 10;
 
-  heroText.style.transform = `translate(${moveX}px, ${moveY}px) scale(1.05)`;
-});
+    heroText.style.transform = `translate(${moveX}px, ${moveY}px) scale(1.05)`;
+  });
 
-document.addEventListener('mouseleave', () => {
-  heroText.style.transform = 'translate(0, 0) scale(1)';
+  document.addEventListener('mouseleave', () => {
+    heroText.style.transform = 'translate(0, 0) scale(1)';
+  });
 });
