@@ -37,6 +37,22 @@ nav a:hover {
   color: #ccc;
 }
 
+/* Navigation link hover effect */
+nav a {
+  margin: 0 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+nav a:hover {
+  transform: scale(1.2);
+  color: #aaa;
+}
+
 /* Hero Section */
 .hero {
   height: 100vh;
