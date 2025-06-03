@@ -1,11 +1,10 @@
-/* General Reset */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base Styles */
 body {
   background-color: #000;
   color: #fff;
@@ -13,7 +12,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Navigation */
+/* Nav bar */
 header {
   position: fixed;
   top: 0;
@@ -30,20 +29,6 @@ nav a {
   text-decoration: none;
   font-weight: 600;
   font-size: 1.1rem;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #ccc;
-}
-
-/* Navigation link hover effect */
-nav a {
-  margin: 0 1.5rem;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.1rem;
   transition: all 0.3s ease;
   display: inline-block;
 }
@@ -53,7 +38,7 @@ nav a:hover {
   color: #aaa;
 }
 
-/* Hero Section */
+/* Hero section */
 .hero {
   height: 100vh;
   display: flex;
@@ -65,9 +50,9 @@ nav a:hover {
   animation: fadeIn 2s ease;
 }
 
-.hero h1 {
+#hero-title {
   font-size: 4rem;
-  animation: zoomIn 1.5s ease;
+  transition: transform 0.2s ease;
 }
 
 .hero p {
@@ -77,11 +62,7 @@ nav a:hover {
   animation: fadeInUp 2s ease;
 }
 
-.hero h1 {
-  transition: transform 0.2s ease;
-}
-
-/* Scrollable Section Placeholder */
+/* Scroll section */
 section {
   padding: 4rem 2rem;
   min-height: 100vh;
@@ -91,11 +72,6 @@ section {
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
-}
-
-@keyframes zoomIn {
-  from { transform: scale(0.9); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
 }
 
 @keyframes fadeInUp {
