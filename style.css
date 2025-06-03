@@ -77,6 +77,10 @@ nav a:hover {
   animation: fadeInUp 2s ease;
 }
 
+.hero h1 {
+  transition: transform 0.2s ease;
+}
+
 /* Scrollable Section Placeholder */
 section {
   padding: 4rem 2rem;
