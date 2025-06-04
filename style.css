@@ -1,5 +1,4 @@
-/* Reset */
-* {
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,7 +11,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Nav bar */
 header {
   position: relative;
   width: 100%;
@@ -37,7 +35,6 @@ nav a:hover {
   color: #aaa;
 }
 
-/* Hero section */
 .hero {
   height: 100vh;
   display: flex;
@@ -61,13 +58,11 @@ nav a:hover {
   animation: fadeInUp 2s ease;
 }
 
-/* Scroll section */
 section {
   padding: 4rem 2rem;
   min-height: 100vh;
 }
 
-/* Animations */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
