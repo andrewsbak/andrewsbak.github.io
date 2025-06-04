@@ -76,3 +76,29 @@ section {
   transition: transform 0.2s ease-out;
   will-change: transform;
 }
+
+.letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: floatIn 0.6s ease forwards;
+}
+
+.letter:nth-child(1) { animation-delay: 0.05s; }
+.letter:nth-child(2) { animation-delay: 0.1s; }
+.letter:nth-child(3) { animation-delay: 0.15s; }
+.letter:nth-child(4) { animation-delay: 0.2s; }
+.letter:nth-child(5) { animation-delay: 0.25s; }
+.letter:nth-child(6) { animation-delay: 0.3s; }
+.letter:nth-child(7) { animation-delay: 0.35s; }
+.letter:nth-child(8) { animation-delay: 0.4s; }
+.letter:nth-child(9) { animation-delay: 0.45s; }
+.letter:nth-child(10) { animation-delay: 0.5s; }
+
+@keyframes floatIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
