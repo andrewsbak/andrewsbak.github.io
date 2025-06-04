@@ -48,7 +48,6 @@ nav a:hover {
 
 #hero-title {
   font-size: 4rem;
-  transition: transform 0.2s ease;
 }
 
 .hero p {
