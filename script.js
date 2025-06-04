@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", () => {
+/* window.addEventListener("DOMContentLoaded", () => {
   const floatEls = document.querySelectorAll('.scroll-float');
 
   const updateScrollFloat = () => {
