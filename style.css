@@ -39,10 +39,10 @@ nav a:hover {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
-  padding-top: 4rem;
+  padding-top: 10vh;
   animation: fadeIn 2s ease;
 }
 
