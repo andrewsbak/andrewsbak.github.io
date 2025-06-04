@@ -1,19 +1,32 @@
-/* window.addEventListener("DOMContentLoaded", () => {
-  const floatEls = document.querySelectorAll('.scroll-float');
+window.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger);
 
-  const updateScrollFloat = () => {
-    const scrollY = window.scrollY;
+  const chars = document.querySelectorAll("#hero-title .char");
 
-    floatEls.forEach(el => {
-      const speed = parseFloat(el.dataset.speed || 0.3);
-      const offset = scrollY * speed;
-
-      const limitedOffset = Math.min(Math.max(offset, -100), 100);
-      el.style.transform = `translateY(${limitedOffset}px)`;
-    });
-
-    requestAnimationFrame(updateScrollFloat);
-  };
-
-  requestAnimationFrame(updateScrollFloat);
+  gsap.fromTo(
+    chars,
+    {
+      willChange: "opacity, transform",
+      opacity: 0,
+      yPercent: 120,
+      scaleY: 2.3,
+      scaleX: 0.7,
+      transformOrigin: "50% 0%",
+    },
+    {
+      opacity: 1,
+      yPercent: 0,
+      scaleY: 1,
+      scaleX: 1,
+      duration: 1,
+      ease: "back.inOut(2)",
+      stagger: 0.03,
+      scrollTrigger: {
+        trigger: "#hero-title",
+        start: "center bottom+=50%",
+        end: "bottom bottom-=40%",
+        scrub: true
+      }
+    }
+  );
 });
