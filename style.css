@@ -18,10 +18,19 @@ header {
 }
 
 nav a {
-  margin: 0 1rem;
+  margin: 0 1.5rem;
   color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+  display: inline-block;
+  cursor: pointer;
+}
+
+nav a:hover {
+  transform: scale(1.2);
+  color: #aaa;
 }
 
 .hero {
