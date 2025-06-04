@@ -12,7 +12,6 @@ body {
 }
 
 header {
-  position: relative;
   width: 100%;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.85);
@@ -43,31 +42,12 @@ nav a:hover {
   align-items: center;
   text-align: center;
   padding-top: 10vh;
-}
-
-.scroll-float {
   overflow: hidden;
 }
 
-.scroll-float-text {
-  display: inline-block;
+#hero-title {
   font-size: clamp(1.6rem, 8vw, 10rem);
   font-weight: 900;
-  text-align: center;
-  line-height: 1.5;
-}
-
-.char {
-  display: inline-block;
-}
-
-.hero p {
-  font-size: 1.5rem;
-  max-width: 600px;
-  margin-top: 1rem;
-}
-
-section {
-  padding: 4rem 2rem;
-  min-height: 100vh;
+  line-height: 1.2;
+  transition: transform 0.1s ease-out;
 }
