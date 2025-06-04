@@ -2,7 +2,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const heroText = document.getElementById('hero-title');
   const floatEls = document.querySelectorAll('.scroll-float');
 
-  document.addEventListener('mousemove', (e) => {
+ /* document.addEventListener('mousemove', (e) => {
     const { clientX, clientY } = e;
     const centerX = window.innerWidth / 2;
     const centerY = window.innerHeight / 2;
@@ -19,6 +19,8 @@ window.addEventListener("DOMContentLoaded", () => {
   document.addEventListener('mouseleave', () => {
     heroText.style.transform = 'translate(0, 0) scale(1)';
   });
+
+*/
 
   window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
