@@ -1,5 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
   const heroText = document.getElementById('hero-title');
+  const floatEls = document.querySelectorAll('.scroll-float');
 
   document.addEventListener('mousemove', (e) => {
     const { clientX, clientY } = e;
@@ -17,5 +18,14 @@ window.addEventListener("DOMContentLoaded", () => {
 
   document.addEventListener('mouseleave', () => {
     heroText.style.transform = 'translate(0, 0) scale(1)';
+  });
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+
+    floatEls.forEach(el => {
+      const speed = el.dataset.speed || 0.3;
+      el.style.transform = `translateY(${scrollY * speed}px)`;
+    });
   });
 });
