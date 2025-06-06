@@ -13,6 +13,12 @@ html, body {
   overflow-x: hidden;
 }
 
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 /* Scroll Progress Bar */
 #scroll-progress {
   position: fixed;
