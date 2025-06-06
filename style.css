@@ -61,6 +61,14 @@ nav a:hover {
   color: #aaa;
 }
 
+.nav-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
 /* SHARED LAYOUT FOR ALL PAGES */
 main {
   flex: 1;
