@@ -82,3 +82,19 @@ nav a:hover {
   transform: scale(1.02);
 }
 
+.resume-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.resume-embed {
+  width: 90%;
+  height: 90vh;
+  border: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
