@@ -12,9 +12,18 @@ body {
 }
 
 header {
-  background: rgba(0, 0, 0, 0.9);
-  padding: 1rem;
-  text-align: center;
+  width: 100%;
+  padding: 1rem 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
 }
 
 nav a {
