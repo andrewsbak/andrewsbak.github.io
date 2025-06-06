@@ -68,12 +68,15 @@ nav a:hover {
   align-items: center;
   min-height: 100vh;
   padding: 2rem;
-  text-align: center;
+}
+
+.resume-page a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .resume-img {
-  display: block;
-  margin: 0 auto;
   width: 90%;
   max-width: 1000px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.08);
@@ -81,7 +84,3 @@ nav a:hover {
   cursor: pointer;
 }
 
-.resume-img:hover {
-  transform: scale(1.02);
-  
-}
