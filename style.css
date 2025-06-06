@@ -171,3 +171,44 @@ main {
   font-weight: bold;
 }
 
+.insights {
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.insight-post {
+  margin-bottom: 3rem;
+  background: #111;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.insight-post:hover {
+  transform: scale(1.02);
+}
+
+.insight-post h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.insight-post .date {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.insight-post .excerpt {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.insight-post a {
+  color: #0ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
