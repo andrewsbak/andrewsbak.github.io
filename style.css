@@ -61,3 +61,24 @@ nav a:hover {
   z-index: 9999;
   transition: width 0.2s ease-out;
 }
+
+.resume-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.resume-img {
+  width: 90%;
+  max-width: 1000px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.resume-img:hover {
+  transform: scale(1.02);
+}
+
