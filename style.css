@@ -70,9 +70,10 @@ nav a:hover {
 }
 
 nav a.active {
-  color: #555;
+  color: #666;
   pointer-events: none;
   transform: none;
+  opacity: 0.6;
 }
 
 /* SHARED LAYOUT FOR ALL PAGES */
