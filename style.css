@@ -249,3 +249,65 @@ main {
 .insight-icon:hover {
   transform: scale(1.1);
 }
+
+/* INSIGHTS LAYOUT */
+.insights {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.insight-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+}
+
+.insight-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.insight-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.insight-text {
+  flex: 1 1 60%;
+  text-align: left;
+}
+
+.insight-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.insight-text .date {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.insight-text p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.insight-text a {
+  color: #0ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.insight-icon {
+  font-size: 3rem;
+  flex: 1 1 30%;
+  text-align: center;
+}
+
