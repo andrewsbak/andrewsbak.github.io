@@ -171,58 +171,66 @@ main {
   font-weight: bold;
 }
 
-.insights {
-  padding: 4rem 2rem;
+.insight-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
   max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
+  margin: 3rem auto;
+  padding: 0 2rem;
 }
 
-.insight-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.insight-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 2rem;
-  margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
-.insight-card {
-  background: #111;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
-  text-align: left;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.insight-row.reverse {
+  flex-direction: row-reverse;
 }
 
-.insight-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+.insight-text {
+  flex: 1 1 60%;
 }
 
-.insight-card h3 {
-  font-size: 1.4rem;
+.insight-text h2 {
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
-.insight-card .date {
+.insight-text .date {
   font-size: 0.85rem;
   color: #888;
   margin-bottom: 1rem;
 }
 
-.insight-card .excerpt {
+.insight-text p {
   font-size: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   color: #ccc;
 }
 
-.insight-link {
+.insight-text a {
   color: #0ff;
-  font-weight: bold;
   text-decoration: none;
-  transition: color 0.2s ease;
+  font-weight: bold;
 }
 
-.insight-link:hover {
+.insight-text a:hover {
   color: #fff;
+}
+
+.insight-icon {
+  font-size: 4rem;
+  flex: 1 1 30%;
+  text-align: center;
+  opacity: 0.8;
+  transition: transform 0.3s ease;
+}
+
+.insight-icon:hover {
+  transform: scale(1.1);
 }
