@@ -7,8 +7,8 @@
 html, body {
   height: 100%;
   width: 100%;
-  background-color: #e0e0e0; /* light grey background */
-  color: #111; /* dark text for contrast */
+  background-color: #e0e0e0;
+  color: #111;
   font-family: 'Segoe UI', sans-serif;
   overflow-x: hidden;
   display: flex;
@@ -66,7 +66,6 @@ nav a.active {
   opacity: 0.6;
 }
 
-/* --- Hero Section --- */
 .hero {
   display: flex;
   align-items: center;
@@ -118,7 +117,6 @@ nav a.active {
   color: #333;
 }
 
-/* Mobile-friendly layout */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
@@ -134,7 +132,6 @@ nav a.active {
   }
 }
 
-/* --- Resume Page --- */
 .resume-page {
   display: flex;
   justify-content: center;
@@ -162,7 +159,6 @@ nav a.active {
   transform: scale(1.02);
 }
 
-/* --- Projects Section --- */
 .projects {
   padding: 4rem 2rem;
   display: flex;
@@ -209,7 +205,6 @@ nav a.active {
   font-weight: bold;
 }
 
-/* --- Insights Section --- */
 .insights {
   padding: 4rem 2rem;
   max-width: 1000px;
@@ -284,7 +279,6 @@ nav a.active {
   transform: scale(1.1);
 }
 
-/* --- Contact Section --- */
 .contact {
   padding: 4rem 2rem;
   max-width: 800px;
@@ -308,7 +302,7 @@ nav a.active {
   width: 50px;
   height: 50px;
   transition: transform 0.2s ease;
-  filter: brightness(0) invert(0); /* dark icons for light bg */
+  filter: brightness(0) invert(0);
 }
 
 .contact-icons img:hover {
